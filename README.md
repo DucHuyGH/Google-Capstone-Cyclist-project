@@ -1,6 +1,0 @@
-~~~~sql
-SELECT
-  *
-FROM
-  data
-~~~~
