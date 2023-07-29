@@ -1,0 +1,11 @@
+SELECT *
+INTO all_2019
+FROM (
+    SELECT * FROM q1_2019
+    UNION ALL
+    SELECT * FROM q2_2019
+	UNION ALL
+	SELECT * FROM q3_2019
+    UNION ALL
+    SELECT * FROM q4_2019
+) AS combined_data;
