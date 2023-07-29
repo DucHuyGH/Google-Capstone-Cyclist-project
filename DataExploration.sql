@@ -35,14 +35,14 @@ select  -- Create contemporary table dupCTE
 	*,
 	row_number() over (
 	partition by start_time,
-				 end_time,
-				 bikeid,
-				 tripduration,
-				 from_station_id,
-				 to_station_id,
-				 usertype
+		     end_time,
+		     bikeid,
+		     tripduration,
+		     from_station_id,
+		     to_station_id,
+		     usertype
 	order by trip_id
-				 ) row_num
+		           ) row_num
 into dupCTE
 from all_2019
 
